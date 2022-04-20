@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    max-height: max-content;
+    background-image: url(https://img.besthqwallpapers.com/Uploads/5-4-2018/47365/rhombuses-geometric-figures-4k-geometry-multicolor-spectrum.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.6rem;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+header p{
+    font-size: 1.4rem;
+    color: white;
+    opacity: 0.9;
+}
+
+main{
+    width: 95%;
+    min-height: 80%;
+    max-height: max-content;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+span, input{
+    display: block;
+    margin: 1rem 0;
+}
+
+span {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+input{
+    border: none;
+    border-radius: 20px;
+    height: 2.5rem;
+    padding: .5rem;
+    outline: none;
+}
+
+input:hover{
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+.card{
+    width: 31rem;
+    height: 40rem;
+    padding: 1.5rem 1rem;
+    margin: 4rem 1rem;
+    background: linear-gradient(15deg,#410069, pink);
+    border-radius: 20px;
+}
+
+.card h2{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+.card-cuadrado .cuadrado{
+    width: 4rem;
+    height: 4rem;
+    background-color:#410069;
+    margin: .5rem auto;
+}
+
+.card-triangulo .triangulo{
+    width: 0;
+    height: 0;
+    border-bottom: 4rem solid #410069;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    margin: .5rem auto;
+}
+
+.card-circulo .circulo{
+    width: 4rem;
+    height: 4rem;
+    background-color: #410069;
+    margin: .5rem auto;
+    border-radius: 50%;
+}
+
+.card form{
+    margin-top: 2rem;
+}
+
+button{
+    height: 3rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+    margin: .5rem .5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: white;
+    color: #410069;
+}
+
+button:hover{
+    background-color: #410069;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes a{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: .2rem 1rem;
+}
+
+.redes img{
+    width: 100%;
+    height: 100%;
+}
+
+.autor{
+    margin: 0 8rem;
+}
+
+.autor p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+

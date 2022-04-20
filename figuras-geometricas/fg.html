@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fg.css" />
+    <script src="fg.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Figuras geométricas</h1>
+      <p>Ejercicio práctico del curso de Javascript</p>
+      <p>Cálculo de perímetros y áreas</p>
+    </header>
+    <main>
+      <div class="card card-cuadrado">
+        <h2>Cuadrado</h2>
+        <div class="cuadrado"></div>
+        <form action="">
+          <label for="square">
+            <span>Ingrese el lado del cuadrado</span>
+            <input type="number" id="square" />
+          </label>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+          </button>
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el perímetro
+          </button>
+        </form>
+      </div>
+      <div class="card card-triangulo">
+        <h2>Triángulo (Isósceles)</h2>
+        <div class="triangulo"></div>
+        <form action="">
+          <label for="lado-uno">
+            <span>Ingrese el lado 1 del triangulo</span>
+            <input type="number" id="lado-uno" />
+          </label>
+          <label for="lado-dos">
+            <span>Ingrese el lado 2 del triangulo</span>
+            <input type="number" id="lado-dos" />
+          </label>
+          <label for="base">
+            <span>Ingrese el lado base del triangulo</span>
+            <input type="number" id="base" />
+          </label>
+          <button type="button" onclick="calcularAreaTriangulo()">
+            Calcular el área
+          </button>
+          <button type="button" onclick="calcularPerimetroTriangulo()">
+            Calcular el perímetro
+          </button>
+        </form>
+      </div>
+      <div class="card card-circulo">
+        <h2>Círculo</h2>
+        <div class="circulo"></div>
+        <form action="">
+          <label for="circle">
+            <span>Ingrese la longitud del radio</span>
+            <input type="number" id="circle" />
+          </label>
+          <button type="button" onclick="calcularAreaCirculo()">
+            Calcular el área
+          </button>
+          <button type="button" onclick="calcularPerimetroCirculo()">
+            Calcular el perímetro
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="redes">
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/124/124011.png"
+            alt="LinkedIn"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+            alt="Facebook"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png"
+            alt="Instagram"
+        /></a>
+      </div>
+      <div class="autor">
+        <p>Autor: Luis Diego Paccotaype Hinostroza</p>
+      </div>
+    </footer>
+  </body>
+</html>
