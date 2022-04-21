@@ -10,8 +10,8 @@ html{
 }
 
 body{
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
     max-height: max-content;
     background-image: url(https://img.besthqwallpapers.com/Uploads/5-4-2018/47365/rhombuses-geometric-figures-4k-geometry-multicolor-spectrum.jpg);
     background-position: center;
@@ -51,11 +51,11 @@ main{
 
 span{
     display: block;
-    margin: 1rem 0;
+    margin: .2rem 0;
 }
 
 span {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-style: italic;
 }
 
@@ -80,11 +80,12 @@ input:hover{
 
 .card{
     width: 31rem;
-    height: 40rem;
+    height: 41rem;
     padding: 1.5rem 1rem;
-    margin: 4rem 1rem;
+    margin: 4rem 0rem;
     background: linear-gradient(15deg,#410069, pink);
     border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
 }
 
 .card h2{
@@ -107,6 +108,12 @@ input:hover{
     border-left: 2rem solid transparent;
     border-right: 2rem solid transparent;
     margin: .5rem auto;
+}
+
+.card-triangulo form p{
+    margin: .2rem 0;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .card-circulo .circulo{
@@ -151,9 +158,26 @@ button:hover{
     width: 100%;
     height: max-content;
     font-size: 1.6rem;
+    color:darkgray;
 }
 
 .result .resultado-cuadrado{
+    color:darkgray;
+    margin-top: .5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.result .resultado-triangulo{
+    color:darkgray;
+    margin-top: .5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.result .resultado-circulo{
     color:darkgray;
     margin-top: .5rem;
     text-align: center;

@@ -70,12 +70,23 @@ function calcularAreaTriangulo() {
   const base = document.getElementById("base");
   const base_value = base.value;
 
+  const unidad = document.getElementById("unidad-triangulo");
+  const unidad_triangulo = unidad.value;
+
   const altura = triangulo(lado1_value, lado2_value, base_value);
   if (Boolean(altura)) {
     const area_triangulo = areaTriangulo(altura, base_value).toFixed(2);
-    alert(area_triangulo);
+    const result_text = document.getElementById("result-text-triangulo");
+    result_text.innerText = "El área del triángulo es:";
+    const result_triangulo = document.getElementById("result-triangulo");
+    result_triangulo.innerText =
+      area_triangulo + " " + unidad_triangulo + "\xB2";
   } else {
-    alert("No son medidas de un triangulo isósceles");
+    const result_text = document.getElementById("result-text-triangulo");
+    result_text.innerText =
+      "No son valores adecuados para un triángulo isósceles";
+    const result_triangulo = document.getElementById("result-triangulo");
+    result_triangulo.innerText = " ";
   }
 }
 
@@ -89,12 +100,22 @@ function calcularPerimetroTriangulo() {
   const base = document.getElementById("base");
   const base_value = base.value;
 
+  const unidad = document.getElementById("unidad-triangulo");
+  const unidad_triangulo = unidad.value;
+
   const altura = triangulo(lado1_value, lado2_value, base_value);
   if (Boolean(altura)) {
     const perimetro_triangulo = perimetroTriangulo(lado1_value, base_value);
-    alert(perimetro_triangulo);
+    const result_text = document.getElementById("result-text-triangulo");
+    result_text.innerText = "El perímetro del triángulo es:";
+    const result_triangulo = document.getElementById("result-triangulo");
+    result_triangulo.innerText = perimetro_triangulo + " " + unidad_triangulo;
   } else {
-    alert("No son medidas de un triangulo isósceles");
+    const result_text = document.getElementById("result-text-triangulo");
+    result_text.innerText =
+      "No son valores adecuados para un triángulo isósceles";
+    const result_triangulo = document.getElementById("result-triangulo");
+    result_triangulo.innerText = " ";
   }
 }
 
@@ -113,13 +134,27 @@ function perimetroCirculo(radio) {
 function calcularAreaCirculo() {
   const input_radio = document.getElementById("circle");
   const radio_value = input_radio.value;
+  const unidad = document.getElementById("unidad-circulo");
+  const unidad_circulo = unidad.value;
   const area_circulo = areaCirculo(radio_value).toFixed(2);
-  alert(area_circulo);
+  const result_text = document.getElementById("result-text-circulo");
+  result_text.innerText = "El área del circulo es: ";
+
+  const result_circulo = document.getElementById("result-circulo");
+  result_circulo.innerText = area_circulo + " " + unidad_circulo + "\xB2";
 }
 
 function calcularPerimetroCirculo() {
   const input_radio = document.getElementById("circle");
   const radio_value = input_radio.value;
+
+  const unidad = document.getElementById("unidad-circulo");
+  const unidad_circulo = unidad.value;
+
   const perimetro_circulo = perimetroCirculo(radio_value).toFixed(2);
-  alert(perimetro_circulo);
+  const result_text = document.getElementById("result-text-circulo");
+  result_text.innerText = "El perímetro del circulo es: ";
+
+  const result_circulo = document.getElementById("result-circulo");
+  result_circulo.innerText = perimetro_circulo + " " + unidad_circulo;
 }

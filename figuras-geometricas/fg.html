@@ -63,6 +63,13 @@
             <span>Ingrese el lado base del triangulo</span>
             <input type="number" id="base" />
           </label>
+          <p>Escoja la unidad de los lados</p>
+          <select name="unidades" id="unidad-triangulo">
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+          </select>
+          <br />
           <button type="button" onclick="calcularAreaTriangulo()">
             Calcular el área
           </button>
@@ -70,6 +77,11 @@
             Calcular el perímetro
           </button>
         </form>
+        <div class="result">
+          <h3>RESULTADO:</h3>
+          <p id="result-text-triangulo"></p>
+          <p id="result-triangulo" class="resultado-triangulo"></p>
+        </div>
       </div>
       <div class="card card-circulo">
         <h2>Círculo</h2>
@@ -79,6 +91,11 @@
             <span>Ingrese la longitud del radio</span>
             <input type="number" id="circle" />
           </label>
+          <select name="unidades" id="unidad-circulo">
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+          </select>
           <button type="button" onclick="calcularAreaCirculo()">
             Calcular el área
           </button>
@@ -86,6 +103,11 @@
             Calcular el perímetro
           </button>
         </form>
+        <div class="result">
+          <h3>RESULTADO:</h3>
+          <p id="result-text-circulo"></p>
+          <p id="result-circulo" class="resultado-circulo"></p>
+        </div>
       </div>
     </main>
     <footer>
