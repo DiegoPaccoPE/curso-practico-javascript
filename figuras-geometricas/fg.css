@@ -49,7 +49,7 @@ main{
     flex-wrap: wrap;
 }
 
-span, input{
+span{
     display: block;
     margin: 1rem 0;
 }
@@ -60,10 +60,17 @@ span {
 }
 
 input{
+    display: inline-block;
     border: none;
     border-radius: 20px;
     height: 2.5rem;
     padding: .5rem;
+    outline: none;
+}
+
+select{
+    width: 5rem;
+    height: 2.5rem;
     outline: none;
 }
 
@@ -132,6 +139,27 @@ button:hover{
     cursor: pointer;
 }
 
+.result{
+    margin: 1rem 0;
+}
+.result h3{
+    margin-bottom: .5rem;
+    font-size: 1.8rem;
+}
+
+.result p{
+    width: 100%;
+    height: max-content;
+    font-size: 1.6rem;
+}
+
+.result .resultado-cuadrado{
+    color:darkgray;
+    margin-top: .5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
 footer{
     width: 100%;
     height: 5%;
@@ -164,6 +192,7 @@ footer{
     font-weight: bold;
     font-style: oblique;
 }
+
 
 
 

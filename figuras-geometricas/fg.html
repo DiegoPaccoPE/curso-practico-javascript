@@ -29,6 +29,11 @@
             <span>Ingrese el lado del cuadrado</span>
             <input type="number" id="square" />
           </label>
+          <select name="unidades" id="unidad-cuadrado">
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+          </select>
           <button type="button" onclick="calcularAreaCuadrado()">
             Calcular el área
           </button>
@@ -36,6 +41,11 @@
             Calcular el perímetro
           </button>
         </form>
+        <div class="result">
+          <h3>RESULTADO:</h3>
+          <p id="result-text-cuadrado"></p>
+          <p id="result-cuadrado" class="resultado-cuadrado"></p>
+        </div>
       </div>
       <div class="card card-triangulo">
         <h2>Triángulo (Isósceles)</h2>

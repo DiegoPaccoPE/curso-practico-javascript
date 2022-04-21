@@ -11,14 +11,30 @@ function perimetroCuadrado(lado) {
 function calcularAreaCuadrado() {
   const input_cuadrado = document.getElementById("square");
   const value_cuadrado = input_cuadrado.value;
+
+  const unidad = document.getElementById("unidad-cuadrado");
+  const unidad_value = unidad.value;
+
   const area_cuadrado = areaCuadrado(value_cuadrado).toFixed(2);
-  alert(area_cuadrado);
+  const result_text = document.getElementById("result-text-cuadrado");
+  result_text.innerText = "El área del cuadrado es: ";
+
+  const result_cuadrado = document.getElementById("result-cuadrado");
+  result_cuadrado.innerText = area_cuadrado + " " + unidad_value + "\xB2";
 }
 function calcularPerimetroCuadrado() {
   const input_cuadrado = document.getElementById("square");
   const value_cuadrado = input_cuadrado.value;
+
+  const unidad = document.getElementById("unidad-cuadrado");
+  const unidad_value = unidad.value;
+
   const perimetro_cuadrado = perimetroCuadrado(value_cuadrado);
-  alert(perimetro_cuadrado);
+  const result_text = document.getElementById("result-text-cuadrado");
+  result_text.innerText = "El perímetro del cuadrado es: ";
+
+  const result_cuadrado = document.getElementById("result-cuadrado");
+  result_cuadrado.innerText = perimetro_cuadrado + " " + unidad_value;
 }
 
 //Triángulo (isósceles)
