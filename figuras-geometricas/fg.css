@@ -85,7 +85,7 @@ input:hover{
     margin: 4rem 0rem;
     background: linear-gradient(15deg,#410069, pink);
     border-radius: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16);
 }
 
 .card h2{
